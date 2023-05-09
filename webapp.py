@@ -41,6 +41,8 @@ collection = db['posts'] #TODO: put the name of the collection here
 
 print("connected to db")
 
+os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1' #Remove once done debugging
+
 #context processors run before templates are rendered and add variable(s) to the template's context
 #context processors must return a dictionary 
 #this context processor adds the variable logged_in to the conext for all templates
@@ -55,7 +57,7 @@ def home():
 #redirect to GitHub's OAuth page and confirm callback URL
 @app.route('/login')
 def login():   
-    return github.authorize(callback=url_for('authorized', _external=True, _scheme='https')) #callback URL must match the pre-configured callback URL
+    return github.authorize(callback=url_for('authorized', _external=True, _scheme='http')) #callback URL must match the pre-configured callback URL
 
 @app.route('/logout')
 def logout():

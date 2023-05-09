@@ -9,5 +9,14 @@
   <h1>Home</h1>
 
   <p>This is a template.</p>
+  <div id="login">
+{% if logged_in %}
+{% endif %}
+  {% if logged_in %}
+  <a href="/logout">Logout</a>
+  {% else %}
+  <a href="/login">Login</a>
+  {% endif %}
+</div>
 
 {% endblock %}
