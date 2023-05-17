@@ -37,7 +37,8 @@ github = oauth.remote_app(
 url = os.environ["MONGO_CONNECTION_STRING"]
 client = pymongo.MongoClient(url)
 db = client[os.environ["MONGO_DBNAME"]]
-collection = db['posts'] #TODO: put the name of the collection here
+cardsCollection = db['CardsCollection'] #TODO: put the name of the collection here
+posCollection = db['PositionsCollection']
 
 print("connected to db")
 
@@ -57,6 +58,8 @@ def home():
 #redirect to GitHub's OAuth page and confirm callback URL
 @app.route('/login')
 def login():   
+    
+    
     return github.authorize(callback=url_for('authorized', _external=True, _scheme='http')) #callback URL must match the pre-configured callback URL
 
 @app.route('/logout')
@@ -87,15 +90,15 @@ def authorized():
 
 @app.route('/page1')
 def renderPage1():
+    return render_template('page1.html')
+
+@app.route('/page2')
+def renderPage2():
     if 'user_data' in session:
         user_data_pprint = pprint.pformat(session['user_data'])#format the user data nicely
     else:
         user_data_pprint = '';
-    return render_template('page1.html',dump_user_data=user_data_pprint)
-
-@app.route('/page2')
-def renderPage2():
-    return render_template('page2.html')
+    return render_template('page2.html',dump_user_data=user_data_pprint)
 
 #the tokengetter is automatically called to check who is logged in.
 @github.tokengetter

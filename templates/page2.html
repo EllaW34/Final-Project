@@ -5,9 +5,19 @@
 {% block title %}page2{% endblock %}
 
 {% block content %}
+<div id="stats">
 
-  <h1>This is Page 2</h1>
+  <h1>Stats</h1>
 
-  <p>Lorem ipsum</p>
-
+{% if logged_in %}
+{% endif %}
+  {% if logged_in %}
+  <pre>
+    {{ dump_user_data }}
+  </pre>
+  {% else %}
+  <p>Login to see your stats.</p>
+  {% endif %}
+  
+</div>
 {% endblock %}

@@ -4,9 +4,10 @@ body {
 }
 
 img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
 #login {
@@ -19,4 +20,199 @@ img {
     padding: 20px;
     text-align: center;
     font-size: 30px;
+}
+
+.log {
+    color: rgb(0, 255, 0);
+}
+
+.is-active {
+    color: rgb(255, 0, 0);
+}
+
+.not-active {
+    color: rgb(255, 255, 0);
+}
+
+#stats {
+    color: rgb(255, 255, 0);
+}
+
+#game {
+    color: rgb(255, 0, 0);
+}
+
+#selection {
+   text-align: center;
+}
+
+#simple {
+    border-color: rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 0);
+    border-style: solid;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+#medium {
+    border-color: rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 0);
+    border-style: ridge;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: serif;
+    font-size: 25px;
+}
+
+#realistic {
+    border-color: rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 0);
+    border-style: inset;
+    border-radius: 12px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: "Brush Script MT", cursive;
+    font-size: 25px;
+}
+
+.dot {
+    /*position: absolute;*/
+    height: 25px;
+    width: 25px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.y1 {
+    position: absolute;
+    background-color: rgb(255, 255, 0);
+    top: 310px;
+    left: 710px;
+}
+
+.y2 {
+    position: absolute;
+    background-color: rgb(255, 255, 0);
+    top: 310px;
+    left: 740px;
+}
+
+.y3 {
+    position: absolute;
+    background-color: rgb(255, 255, 0);
+    top: 340px;
+    left: 710px;
+}
+
+.y4 {
+    position: absolute;
+    background-color: rgb(255, 255, 0);
+    top: 340px;
+    left: 740px;
+}
+
+.g1 {
+    position: absolute;
+    background-color: rgb(2, 158, 56);
+    top: 445px;
+    left: 1295px;
+}
+
+.g2 {
+    position: absolute;
+    background-color: rgb(2, 158, 56);
+    top: 445px;
+    left: 1325px;
+}
+
+.g3 {
+    position: absolute;
+    background-color: rgb(2, 158, 56);
+    top: 475px;
+    left: 1295px;
+}
+
+.g4 {
+    position: absolute;
+    background-color: rgb(2, 158, 56);
+    top: 475px;
+    left: 1325px;
+}
+
+.b1 {
+    position: absolute;
+    background-color: rgb(20, 176, 227);
+    top: 815px;
+    left: 550px;
+}
+
+.b2 {
+    position: absolute;
+    background-color: rgb(20, 176, 227);
+    top: 815px;
+    left: 580px;
+}
+
+.b3 {
+    position: absolute;
+    background-color: rgb(20, 176, 227);
+    top: 845px;
+    left: 550px;
+}
+
+.b4 {
+    position: absolute;
+    background-color: rgb(20, 176, 227);
+    top: 845px;
+    left: 580px;
+}
+
+.r1 {
+    position: absolute;
+    background-color: rgb(255, 0, 0);
+    top: 945px;
+    left: 1140px;
+}
+
+.r2 {
+    position: absolute;
+    background-color: rgb(255, 0, 0);
+    top: 945px;
+    left: 1170px;
+}
+
+.r3 {
+    position: absolute;
+    background-color: rgb(255, 0, 0);
+    top: 975px;
+    left: 1140px;
+}
+
+.r4 {
+    position: absolute;
+    background-color: rgb(255, 0, 0);
+    top: 975px;
+    left: 1170px;
+}
+
+.cardDraw {
+    padding: 30px;
+    font-size: 30px;
+    border-radius: 15%;
+    position: absolute;
+    background-color: rgb(128, 255, 0);
+    color: rgb(255, 0, 255);
+    border: 3px solid rgb(255, 0, 255);
+    top: 610px;
+    left: 44.75%;
 }

@@ -5,8 +5,42 @@
 {% block title %}page1{% endblock %}
 
 {% block content %}
-  <h1>This is Page 1</h1>
+<div id="game">
+  <h1>Game</h1>
 
+    
+{% if logged_in %}
+{% endif %}
+  {% if logged_in %}
+  <div id="selection">
+    <h2>Pick your board</h2>
+    <button type="button" id="simple">Simple</button>
+    <button type="button" id="medium">Medium</button>
+    <button type="button" id="realistic">Realistic</button>
+    <br><br>
+  </div>
   <img src="static/SorryBoard1.jpg" alt="Game Board">
+  <span class="dot y1"></span>
+  <span class="dot y2"></span>
+  <span class="dot y3"></span>
+  <span class="dot y4"></span>
+  <span class="dot g1"></span>
+  <span class="dot g2"></span>
+  <span class="dot g3"></span>
+  <span class="dot g4"></span>
+  <span class="dot b1"></span>
+  <span class="dot b2"></span>
+  <span class="dot b3"></span>
+  <span class="dot b4"></span>
+  <span class="dot r1"></span>
+  <span class="dot r2"></span>
+  <span class="dot r3"></span>
+  <span class="dot r4"></span>
+  <button type="button" class="cardDraw">Draw Card</button>
+  {% else %}
+  <p>Please login before you play.</p>
+  {% endif %}
 
+  
+</div>
 {% endblock %}
