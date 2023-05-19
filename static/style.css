@@ -205,7 +205,7 @@ img {
     left: 1170px;
 }
 
-.cardDraw {
+#cardDraw {
     padding: 30px;
     font-size: 30px;
     border-radius: 15%;
@@ -215,4 +215,34 @@ img {
     border: 3px solid rgb(255, 0, 255);
     top: 610px;
     left: 44.75%;
+}
+
+#startGame {
+    padding: 30px;
+    font-size: 30px;
+    border-radius: 15%;
+    position: absolute;
+    background-color: rgb(128, 255, 0);
+    color: rgb(255, 0, 255);
+    border: 3px solid rgb(255, 0, 255);
+    top: 610px;
+    left: 44.75%;
+}
+
+.drawnCard {
+    text-align: center;
+    position: absolute;
+    color: red;
+    top: 450px;
+    left: 40%;
+    right: 40%;
+}
+
+#gameInstructions {
+    text-align: center;
+    position: absolute;
+    color: red;
+    top: 750px;
+    left: 40%;
+    right: 40%;
 }

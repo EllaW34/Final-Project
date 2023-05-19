@@ -3,12 +3,12 @@ from flask_apscheduler import APScheduler
 from apscheduler.schedulers.background import BackgroundScheduler
 from flask_oauthlib.client import OAuth
 from bson.objectid import ObjectId
-
 import pprint
 import os
 import time
 import pymongo
 import sys
+import random
  
 app = Flask(__name__)
 
@@ -57,9 +57,7 @@ def home():
 
 #redirect to GitHub's OAuth page and confirm callback URL
 @app.route('/login')
-def login():   
-    
-    
+def login():     
     return github.authorize(callback=url_for('authorized', _external=True, _scheme='http')) #callback URL must match the pre-configured callback URL
 
 @app.route('/logout')
@@ -87,6 +85,51 @@ def authorized():
             flash('Unable to login, please try again.', 'error')
     return redirect('/')
 
+@app.route('/startGame')
+def startGame():
+    session["cards"] = []
+    session["positions"] = []
+    for c in cardsCollection.find():
+        cardsDict = {"amount": c["amount"], "direction": c["direction"]}
+        session["cards"].append(cardsDict)
+    for p in posCollection.find():
+        posDict = {"type": p["type"], "number": p["number"]}
+        session["positions"].append(posDict)
+    session["y1"] = {"position": session["positions"][session["positions"].index({"type": "yellow", "number": 0})]}
+    session["y2"] = {"position": session["positions"][session["positions"].index({"type": "yellow", "number": 0})]}
+    session["y3"] = {"position": session["positions"][session["positions"].index({"type": "yellow", "number": 0})]}
+    session["y4"] = {"position": session["positions"][session["positions"].index({"type": "yellow", "number": 0})]}
+    session["g1"] = {"position": session["positions"][session["positions"].index({"type": "green", "number": 0})]}
+    session["g2"] = {"position": session["positions"][session["positions"].index({"type": "green", "number": 0})]}
+    session["g3"] = {"position": session["positions"][session["positions"].index({"type": "green", "number": 0})]}
+    session["g4"] = {"position": session["positions"][session["positions"].index({"type": "green", "number": 0})]}
+    session["r1"] = {"position": session["positions"][session["positions"].index({"type": "red", "number": 0})]}
+    session["r2"] = {"position": session["positions"][session["positions"].index({"type": "red", "number": 0})]}
+    session["r3"] = {"position": session["positions"][session["positions"].index({"type": "red", "number": 0})]}
+    session["r4"] = {"position": session["positions"][session["positions"].index({"type": "red", "number": 0})]}
+    session["b1"] = {"position": session["positions"][session["positions"].index({"type": "blue", "number": 0})]}
+    session["b2"] = {"position": session["positions"][session["positions"].index({"type": "blue", "number": 0})]}
+    session["b3"] = {"position": session["positions"][session["positions"].index({"type": "blue", "number": 0})]}
+    session["b4"] = {"position": session["positions"][session["positions"].index({"type": "blue", "number": 0})]}
+    print(session["y1"])
+    session["text1"] = "Game Instructions"
+    session["text2"] = "More Game Instructions"
+    return session["text1"], session["text2"]
+
+@app.route('/drawCard')
+def drawCard():
+    if len(session["cards"]) == 0:
+        session["cards"] = []
+        for c in cardsCollection.find():
+            cardsDict = {"amount": c["amount"], "direction": c["direction"]}
+            session["cards"].append(cardsDict)
+        print("Cards Restocked")
+    print("Card Drawn")
+    cardNum = random.randrange(0, len(session["cards"]))
+    cardDrawn = session["cards"].pop(cardNum)
+    session["text1"] = "Move " + str(cardDrawn['direction']) + ", " + str(cardDrawn['amount']) + " spaces."
+    print(session["text1"])
+    return session["text1"]
 
 @app.route('/page1')
 def renderPage1():
@@ -107,4 +150,4 @@ def get_github_oauth_token():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)

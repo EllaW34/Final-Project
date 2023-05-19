@@ -5,6 +5,7 @@
 {% block title %}page1{% endblock %}
 
 {% block content %}
+<script src="static/final.js"></script>
 <div id="game">
   <h1>Game</h1>
 
@@ -14,9 +15,9 @@
   {% if logged_in %}
   <div id="selection">
     <h2>Pick your board</h2>
-    <button type="button" id="simple">Simple</button>
-    <button type="button" id="medium">Medium</button>
-    <button type="button" id="realistic">Realistic</button>
+    <button type="button" onClick="simpleButton" id="simple">Simple</button>
+    <button type="button" onClick="mediumButton" id="medium">Medium</button>
+    <button type="button" onClick="realButton" id="realistic">Realistic</button>
     <br><br>
   </div>
   <img src="static/SorryBoard1.jpg" alt="Game Board">
@@ -36,7 +37,10 @@
   <span class="dot r2"></span>
   <span class="dot r3"></span>
   <span class="dot r4"></span>
-  <button type="button" class="cardDraw">Draw Card</button>
+  <button type="button" onClick="/startGame" id="startGame">Start Game</button>
+  <button type="button" onClick="/drawCard" id="cardDraw">Draw Card</button>
+  <h1 class="drawnCard">{{session[text1]}}</h1>
+  <h1 id="gameInstructions">{{session[text2]}}</h1>
   {% else %}
   <p>Please login before you play.</p>
   {% endif %}
