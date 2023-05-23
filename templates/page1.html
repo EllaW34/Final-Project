@@ -21,6 +21,30 @@
     <br><br>
   </div>
   <img src="static/SorryBoard1.jpg" alt="Game Board">
+  <span class="line yLine1"></span>
+  <span class="line yLine2"></span>
+  <span class="line gLine1"></span>
+  <span class="line gLine2"></span>
+  <span class="line rLine1"></span>
+  <span class="line rLine2"></span>
+  <span class="line bLine1"></span>
+  <span class="line bLine2"></span>
+  <span class="square ySlide1"></span>
+  <span class="square ySlide2"></span>
+  <span class="circle yEnd1"></span>
+  <span class="circle yEnd2"></span>
+  <span class="square gSlide1"></span>
+  <span class="square gSlide2"></span>
+  <span class="circle gEnd1"></span>
+  <span class="circle gEnd2"></span>
+  <span class="square rSlide1"></span>
+  <span class="square rSlide2"></span>
+  <span class="circle rEnd1"></span>
+  <span class="circle rEnd2"></span>
+  <span class="square bSlide1"></span>
+  <span class="square bSlide2"></span>
+  <span class="circle bEnd1"></span>
+  <span class="circle bEnd2"></span>
   <span class="dot y1"></span>
   <span class="dot y2"></span>
   <span class="dot y3"></span>
@@ -41,6 +65,7 @@
   <button type="button" onClick="/drawCard" id="cardDraw">Draw Card</button>
   <h1 class="drawnCard">{{session[text1]}}</h1>
   <h1 id="gameInstructions">{{session[text2]}}</h1>
+  <br>
   {% else %}
   <p>Please login before you play.</p>
   {% endif %}

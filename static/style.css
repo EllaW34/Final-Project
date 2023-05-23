@@ -246,3 +246,203 @@ img {
     left: 40%;
     right: 40%;
 }
+
+.square {
+    height: 46px;
+    width: 50px;
+    display: inline-block;
+}
+
+.circle {
+    height: 46px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.ySlide1 {
+    position: absolute;
+    background-color: rgb(255, 255, 0);
+    background-image: linear-gradient(rgb(46, 194, 0) 33%, rgb(255, 0, 0) 33%, rgb(255, 0, 0) 66%, rgb(0, 162, 255) 66%, rgb(0, 162, 255) 100%);
+    top: 240px;
+    left: 530px;
+}
+
+.ySlide2 {
+    position: absolute;
+    background-color: rgb(255, 255, 0);
+    background-image: linear-gradient(rgb(46, 194, 0) 33%, rgb(255, 0, 0) 33%, rgb(255, 0, 0) 66%, rgb(0, 162, 255) 66%, rgb(0, 162, 255) 100%);
+    top: 240px;
+    left: 1018px;
+}
+
+.yEnd1 {
+    position: absolute;
+    background-color: rgb(255, 255, 0);
+    background-image: radial-gradient(circle, rgb(46, 194, 0) 20%, rgb(255, 0, 0) 20%, rgb(255, 0, 0) 50%, rgb(0, 162, 255) 50%, rgb(0, 162, 255) 100%);
+    top: 240px;
+    left: 712px;
+}
+
+.yEnd2 {
+    position: absolute;
+    background-color: rgb(255, 255, 0);
+    background-image: radial-gradient(circle, rgb(46, 194, 0) 20%, rgb(255, 0, 0) 20%, rgb(255, 0, 0) 50%, rgb(0, 162, 255) 50%, rgb(0, 162, 255) 100%);
+    top: 240px;
+    left: 1264px;
+}
+
+.gSlide1 {
+    position: absolute;
+    background-color: rgb(0, 255, 0);
+    background-image: linear-gradient(to right, rgb(255, 255, 0) 33%, rgb(0, 162, 255) 33%, rgb(0, 162, 255) 66%, rgb(255, 0, 0) 66%, rgb(255, 0, 0) 100%);
+    top: 293px;
+    left: 1386px;
+}
+
+.gSlide2 {
+    position: absolute;
+    background-color: rgb(0, 255, 0);
+    background-image: linear-gradient(to right, rgb(255, 255, 0) 33%, rgb(0, 162, 255) 33%, rgb(0, 162, 255) 66%, rgb(255, 0, 0) 66%, rgb(255, 0, 0) 100%);
+    top: 714px;
+    left: 1386px;
+}
+
+.gEnd1 {
+    position: absolute;
+    background-color: rgb(0, 255, 0);
+    background-image: radial-gradient(rgb(255, 0, 0) 20%, rgb(0, 162, 255) 20%, rgb(0, 162, 255) 50%, rgb(255, 255, 0) 50%, rgb(255, 255, 0) 100%);
+    top: 451px;
+    left: 1386px;
+}
+
+.gEnd2 {
+    position: absolute;
+    background-color: rgb(0, 255, 0);
+    background-image: radial-gradient(rgb(255, 0, 0) 20%, rgb(0, 162, 255) 20%, rgb(0, 162, 255) 50%, rgb(255, 255, 0) 50%, rgb(255, 255, 0) 100%);
+    top: 924px;
+    left: 1386px;
+}
+
+.rSlide1 {
+    position: absolute;
+    background-color: rgb(255, 0, 0);
+    background-image: linear-gradient(rgb(46, 194, 0) 33%, rgb(255, 255, 0) 33%, rgb(255, 255, 0) 66%, rgb(0, 162, 255) 66%, rgb(0, 162, 255) 100%);
+    top: 1030px;
+    left: 1325px;
+}
+
+.rSlide2 {
+    position: absolute;
+    background-color: rgb(255, 0, 0);
+    background-image: linear-gradient(rgb(46, 194, 0) 33%, rgb(255, 255, 0) 33%, rgb(255, 255, 0) 66%, rgb(0, 162, 255) 66%, rgb(0, 162, 255) 100%);
+    top: 1030px;
+    left: 835px;
+}
+
+.rEnd1 {
+    position: absolute;
+    background-color: rgb(255, 0, 0);
+    background-image: radial-gradient(rgb(0, 162, 255) 20%, rgb(255, 255, 0) 20%, rgb(255, 255, 0) 50%, rgb(46, 194, 0) 50%, rgb(46, 194, 0) 100%);
+    top: 1030px;
+    left: 1141px;
+}
+
+.rEnd2 {
+    position: absolute;
+    background-color: rgb(255, 0, 0);
+    background-image: radial-gradient(rgb(0, 162, 255) 20%, rgb(255, 255, 0) 20%, rgb(255, 255, 0) 50%, rgb(46, 194, 0) 50%, rgb(46, 194, 0) 100%);
+    top: 1030px;
+    left: 590px;
+}
+
+.bSlide1 {
+    position: absolute;
+    background-color: rgb(0, 0, 255);
+    background-image: linear-gradient(to right, rgb(255, 255, 0) 33%, rgb(46, 194, 0) 33%, rgb(46, 194, 0) 66%, rgb(255, 0, 0) 66%, rgb(255, 0, 0) 100%);
+    top: 977px;
+    left: 467px;
+}
+
+.bSlide2 {
+    position: absolute;
+    background-color: rgb(0, 0, 255);
+    background-image: linear-gradient(to right, rgb(255, 255, 0) 33%, rgb(46, 194, 0) 33%, rgb(46, 194, 0) 66%, rgb(255, 0, 0) 66%, rgb(255, 0, 0) 100%);
+    top: 556px;
+    left: 467px;
+}
+
+.bEnd1 {
+    position: absolute;
+    background-color: rgb(0, 0, 255);
+    background-image: radial-gradient(rgb(255, 255, 0) 20%, rgb(46, 194, 0) 20%, rgb(46, 194, 0) 50%, rgb(255, 0, 0) 50%, rgb(255, 0, 0) 100%);
+    top: 819px;
+    left: 467px;
+}
+
+.bEnd2 {
+    position: absolute;
+    background-color: rgb(0, 0, 255);
+    background-image: radial-gradient(rgb(255, 255, 0) 20%, rgb(46, 194, 0) 20%, rgb(46, 194, 0) 50%, rgb(255, 0, 0) 50%, rgb(255, 0, 0) 100%);
+    top: 345px;
+    left: 467px;
+}
+
+.line {
+    height: 10px;
+    width: 200px;
+    display: inline-block;
+    background-color: black;
+}
+
+.yLine1 {
+    position: absolute;
+    top: 258px;
+    left: 530px;
+}
+
+.yLine2 {
+    position: absolute;
+    top: 258px;
+    left: 1065px;
+}
+
+.gLine1 {
+    position: absolute;
+    top: 388px;
+    left: 1311px;
+    rotate: 90deg;
+}
+
+.gLine2 {
+    position: absolute;
+    top: 820px;
+    left: 1311px;
+    rotate: 90deg;
+}
+
+.rLine1 {
+    position: absolute;
+    top: 1047px;
+    left: 1170px;
+}
+
+.rLine2 {
+    position: absolute;
+    top: 1047px;
+    left: 635px;
+}
+
+.bLine1 {
+    position: absolute;
+    top: 915px;
+    left: 392px;
+    rotate: 90deg;
+}
+
+.bLine2 {
+    position: absolute;
+    top: 458px;
+    left: 392px;
+    rotate: 90deg;
+}

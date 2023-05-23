@@ -111,10 +111,12 @@ def startGame():
     session["b2"] = {"position": session["positions"][session["positions"].index({"type": "blue", "number": 0})]}
     session["b3"] = {"position": session["positions"][session["positions"].index({"type": "blue", "number": 0})]}
     session["b4"] = {"position": session["positions"][session["positions"].index({"type": "blue", "number": 0})]}
-    print(session["y1"])
-    session["text1"] = "Game Instructions"
-    session["text2"] = "More Game Instructions"
-    return session["text1"], session["text2"]
+    yellowTurn = True
+    greenTurn = False
+    redTurn = False
+    blueTurn = False
+    session["text1"] = "Yellow's turn"
+    return session["text1"]
 
 @app.route('/drawCard')
 def drawCard():
@@ -124,11 +126,9 @@ def drawCard():
             cardsDict = {"amount": c["amount"], "direction": c["direction"]}
             session["cards"].append(cardsDict)
         print("Cards Restocked")
-    print("Card Drawn")
     cardNum = random.randrange(0, len(session["cards"]))
     cardDrawn = session["cards"].pop(cardNum)
     session["text1"] = "Move " + str(cardDrawn['direction']) + ", " + str(cardDrawn['amount']) + " spaces."
-    print(session["text1"])
     return session["text1"]
 
 @app.route('/page1')
