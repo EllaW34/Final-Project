@@ -21,50 +21,55 @@
     <br><br>
   </div>
   <img src="static/SorryBoard1.jpg" alt="Game Board">
-  <span class="line yLine1"></span>
-  <span class="line yLine2"></span>
-  <span class="line gLine1"></span>
-  <span class="line gLine2"></span>
-  <span class="line rLine1"></span>
-  <span class="line rLine2"></span>
-  <span class="line bLine1"></span>
-  <span class="line bLine2"></span>
-  <span class="square ySlide1"></span>
-  <span class="square ySlide2"></span>
-  <span class="circle yEnd1"></span>
-  <span class="circle yEnd2"></span>
-  <span class="square gSlide1"></span>
-  <span class="square gSlide2"></span>
-  <span class="circle gEnd1"></span>
-  <span class="circle gEnd2"></span>
-  <span class="square rSlide1"></span>
-  <span class="square rSlide2"></span>
-  <span class="circle rEnd1"></span>
-  <span class="circle rEnd2"></span>
-  <span class="square bSlide1"></span>
-  <span class="square bSlide2"></span>
-  <span class="circle bEnd1"></span>
-  <span class="circle bEnd2"></span>
-  <span class="dot y1"></span>
-  <span class="dot y2"></span>
-  <span class="dot y3"></span>
-  <span class="dot y4"></span>
-  <span class="dot g1"></span>
-  <span class="dot g2"></span>
-  <span class="dot g3"></span>
-  <span class="dot g4"></span>
-  <span class="dot b1"></span>
-  <span class="dot b2"></span>
-  <span class="dot b3"></span>
-  <span class="dot b4"></span>
-  <span class="dot r1"></span>
-  <span class="dot r2"></span>
-  <span class="dot r3"></span>
-  <span class="dot r4"></span>
-  <button type="button" onClick="/startGame" id="startGame">Start Game</button>
-  <button type="button" onClick="/drawCard" id="cardDraw">Draw Card</button>
-  <h1 class="drawnCard">{{session[text1]}}</h1>
-  <h1 id="gameInstructions">{{session[text2]}}</h1>
+  <div id="nonMoving">
+    <span class="line yLine1"></span>
+    <span class="line yLine2"></span>
+    <span class="line gLine1"></span>
+    <span class="line gLine2"></span>
+    <span class="line rLine1"></span>
+    <span class="line rLine2"></span>
+    <span class="line bLine1"></span>
+    <span class="line bLine2"></span>
+    <span class="square ySlide1"></span>
+    <span class="square ySlide2"></span>
+    <span class="circle yEnd1"></span>
+    <span class="circle yEnd2"></span>
+    <span class="square gSlide1"></span>
+    <span class="square gSlide2"></span>
+    <span class="circle gEnd1"></span>
+    <span class="circle gEnd2"></span>
+    <span class="square rSlide1"></span>
+    <span class="square rSlide2"></span>
+    <span class="circle rEnd1"></span>
+    <span class="circle rEnd2"></span>
+    <span class="square bSlide1"></span>
+    <span class="square bSlide2"></span>
+    <span class="circle bEnd1"></span>
+    <span class="circle bEnd2"></span>
+    <button type="button" id="cardDraw">Draw Card</button>
+    <button type="button" id="startGame">Start Game</button>
+    <h1 class="drawnCard">{{session[text1]}}</h1>
+    <h1 id="gameInstructions">{{session[text2]}}</h1>
+  </div>
+  
+  <div id="moving">
+    <span class="dot y1 yellow"></span>
+    <span class="dot y2 yellow"></span>
+    <span class="dot y3 yellow"></span>
+    <span class="dot y4 yellow"></span>
+    <span class="dot g1 green"></span>
+    <span class="dot g2 green"></span>
+    <span class="dot g3 green"></span>
+    <span class="dot g4 green"></span>
+    <span class="dot b1 blue"></span>
+    <span class="dot b2 blue"></span>
+    <span class="dot b3 blue"></span>
+    <span class="dot b4 blue"></span>
+    <span class="dot r1 red"></span>
+    <span class="dot r2 red"></span>
+    <span class="dot r3 red"></span>
+    <span class="dot r4 red"></span>  
+  </div>
   <br>
   {% else %}
   <p>Please login before you play.</p>

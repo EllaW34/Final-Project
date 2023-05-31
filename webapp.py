@@ -127,9 +127,67 @@ def drawCard():
             session["cards"].append(cardsDict)
         print("Cards Restocked")
     cardNum = random.randrange(0, len(session["cards"]))
-    cardDrawn = session["cards"].pop(cardNum)
-    session["text1"] = "Move " + str(cardDrawn['direction']) + ", " + str(cardDrawn['amount']) + " spaces."
+    session["cardDrawn"] = session["cards"].pop(cardNum)
+    session["text1"] = "Move " + str(session["cardDrawn"]['direction']) + ", " + str(session["cardDrawn"]['amount']) + " spaces."
+    
     return session["text1"]
+
+@app.route('/moveYellow', methods=['POST'])
+def moveYellow():
+    theThing = request.form
+    print(theThing["piece"])
+    move(theThing["piece"])
+    
+    return session[theThing["piece"]]
+    
+def move(piece):
+    print(session["y4"])
+    if session[piece] == "":
+        return
+    if session[piece]["position"]["type"] == "yellow":
+        if session[piece]["position"]["number"] == 0:
+            session[piece]["position"]["type"] = "white"
+            session[piece]["position"]["number"] = 5
+            session[piece]["position"]["number"] = session[piece]["position"]["number"] + session["cardDrawn"]["amount"]-1
+        elif session[piece]["position"]["number"] > 0 and session[piece]["position"]["number"] < 6:
+            if session[piece]["position"]["number"] + session["cardDrawn"]["amount"] < 7:
+                session[piece]["position"]["number"] = session[piece]["position"]["number"] + session["cardDrawn"]["amount"]
+    elif session[piece]["position"]["type"] == "white":
+        print("move in white")
+        if session[piece]["position"]["number"] + session["cardDrawn"]["amount"] > 60:
+            temp = session[piece]["position"]["number"]
+            session[piece]["position"]["number"] = 1
+            if session[piece]["position"]["number"] + session["cardDrawn"]["amount"] - (60 - temp) - 1 > 3:
+                session[piece]["position"]["type"] = "yellow"
+                session[piece]["position"]["number"] = 1
+                if session[piece]["position"]["number"] + session["cardDrawn"]["amount"] - (60 - temp) - 4 < 7:
+                    session[piece]["position"]["number"] = session[piece]["position"]["number"] + session["cardDrawn"]["amount"] - (60 - temp) - 4
+            else:
+                session[piece]["position"]["number"] = session[piece]["position"]["number"] + session["cardDrawn"]["amount"] - (60 - session[piece]["position"]["number"]) - 1
+        else:
+            session[piece]["position"]["number"] = session[piece]["position"]["number"] + session["cardDrawn"]["amount"]
+    if session[piece]["position"]["number"] == 17 or session[piece]["position"]["number"] == 32 or session[piece]["position"]["number"] == 47:
+        session[piece]["position"]["number"] = session[piece]["position"]["number"] + 3
+    elif session[piece]["position"]["number"] == 25 or session[piece]["position"]["number"] == 40 or session[piece]["position"]["number"] == 55:
+        session[piece]["position"]["number"] = session[piece]["position"]["number"] + 4
+    
+    print(session["y4"])
+    return session["y4"]
+    
+@app.route('/moveGreen', methods=['POST'])
+def moveGreen():
+    print(session["y4"])
+    return 2
+    
+@app.route('/moveRed', methods=['POST'])
+def moveRed():
+    print(session["y4"])
+    return 3
+    
+@app.route('/moveBlue', methods=['POST'])
+def moveBlue():
+    print(session["y4"])
+    return 4
 
 @app.route('/page1')
 def renderPage1():
