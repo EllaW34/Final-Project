@@ -4,10 +4,27 @@ body {
 }
 
 img {
+    width: 51.5%;
+    height: 91.3%;
     position: absolute;
+    top: 25.5%;
     left: 0;
     right: 0;
     margin: 0 auto;
+}
+
+h2 {
+    font-size: 27.5px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+#instructions {
+   text-align: center;
+   margin-left: 20%;
+   margin-right: 20%;
 }
 
 .navbar-text {
@@ -90,8 +107,8 @@ img {
 
 .dot {
     /*position: absolute;*/
-    height: 25px;
-    width: 25px;
+    height: 2.7%;
+    width: 1.3%;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 50%;
     display: inline-block;
@@ -100,113 +117,113 @@ img {
 .y1 {
     position: absolute;
     background-color: rgb(255, 255, 0);
-    top: 310px;
-    left: 710px;
+    top: 33.6%;
+    left: 37.3%;
 }
 
 .y2 {
     position: absolute;
     background-color: rgb(255, 255, 0);
-    top: 310px;
-    left: 740px;
+    top: 33.6%;
+    left: 38.9%;
 }
 
 .y3 {
     position: absolute;
     background-color: rgb(255, 255, 0);
-    top: 340px;
-    left: 710px;
+    top: 36.8%;
+    left: 37.3%;
 }
 
 .y4 {
     position: absolute;
     background-color: rgb(255, 255, 0);
-    top: 340px;
-    left: 740px;
+    top: 36.8%;
+    left: 38.9%;
 }
 
 .g1 {
     position: absolute;
     background-color: rgb(2, 158, 56);
-    top: 445px;
-    left: 1295px;
+    top: 48.2%;
+    left: 68.0%;
 }
 
 .g2 {
     position: absolute;
     background-color: rgb(2, 158, 56);
-    top: 445px;
-    left: 1325px;
+    top: 48.2%;
+    left: 69.6%;
 }
 
 .g3 {
     position: absolute;
     background-color: rgb(2, 158, 56);
-    top: 475px;
-    left: 1295px;
+    top: 51.4%;
+    left: 68%;
 }
 
 .g4 {
     position: absolute;
     background-color: rgb(2, 158, 56);
-    top: 475px;
-    left: 1325px;
+    top: 51.4%;
+    left: 69.6%;
 }
 
 .b1 {
     position: absolute;
     background-color: rgb(20, 176, 227);
-    top: 815px;
-    left: 550px;
+    top: 88.3%;
+    left: 28.9%;
 }
 
 .b2 {
     position: absolute;
     background-color: rgb(20, 176, 227);
-    top: 815px;
-    left: 580px;
+    top: 88.3%;
+    left: 30.4%;
 }
 
 .b3 {
     position: absolute;
     background-color: rgb(20, 176, 227);
-    top: 845px;
-    left: 550px;
+    top: 91.5%;
+    left: 28.9%;
 }
 
 .b4 {
     position: absolute;
     background-color: rgb(20, 176, 227);
-    top: 845px;
-    left: 580px;
+    top: 91.5%;
+    left: 30.4%;
 }
 
 .r1 {
     position: absolute;
     background-color: rgb(255, 0, 0);
-    top: 945px;
-    left: 1140px;
+    top: 102.4%;
+    left: 59.8%;
 }
 
 .r2 {
     position: absolute;
     background-color: rgb(255, 0, 0);
-    top: 945px;
-    left: 1170px;
+    top: 102.4%;
+    left: 61.4%;
 }
 
 .r3 {
     position: absolute;
     background-color: rgb(255, 0, 0);
-    top: 975px;
-    left: 1140px;
+    top: 105.6%;
+    left: 59.8%;
 }
 
 .r4 {
     position: absolute;
     background-color: rgb(255, 0, 0);
-    top: 975px;
-    left: 1170px;
+    top: 105.6%;
+    left: 61.4%;
 }
 
 #cardDraw {
@@ -217,7 +234,7 @@ img {
     background-color: rgb(128, 255, 0);
     color: rgb(255, 0, 255);
     border: 3px solid rgb(255, 0, 255);
-    top: 610px;
+    top: 66.1%;
     left: 44.75%;
 }
 
@@ -229,7 +246,7 @@ img {
     background-color: rgb(128, 255, 0);
     color: rgb(255, 0, 255);
     border: 3px solid rgb(255, 0, 255);
-    top: 610px;
+    top: 66.1%;
     left: 44.75%;
 }
 
@@ -252,149 +269,151 @@ img {
 }
 
 .square {
-    height: 46px;
-    width: 50px;
+    height: 4.9%;
+    width: 2.6%;
     display: inline-block;
 }
 
 .circle {
-    height: 46px;
-    width: 50px;
+    height: 4.9%;
+    width: 2.6%;
     border-radius: 50%;
     display: inline-block;
 }
+
+
 
 .ySlide1 {
     position: absolute;
     background-color: rgb(255, 255, 0);
     background-image: linear-gradient(rgb(46, 194, 0) 33%, rgb(255, 0, 0) 33%, rgb(255, 0, 0) 66%, rgb(0, 162, 255) 66%, rgb(0, 162, 255) 100%);
-    top: 240px;
-    left: 530px;
+    top: 26.0%;
+    left: 27.8%;
 }
 
 .ySlide2 {
     position: absolute;
     background-color: rgb(255, 255, 0);
     background-image: linear-gradient(rgb(46, 194, 0) 33%, rgb(255, 0, 0) 33%, rgb(255, 0, 0) 66%, rgb(0, 162, 255) 66%, rgb(0, 162, 255) 100%);
-    top: 240px;
-    left: 1018px;
+    top: 26.0%;
+    left: 53.5%;
 }
 
 .yEnd1 {
     position: absolute;
     background-color: rgb(255, 255, 0);
     background-image: radial-gradient(circle, rgb(46, 194, 0) 20%, rgb(255, 0, 0) 20%, rgb(255, 0, 0) 50%, rgb(0, 162, 255) 50%, rgb(0, 162, 255) 100%);
-    top: 240px;
-    left: 712px;
+    top: 26.0%;
+    left: 37.4%;
 }
 
 .yEnd2 {
     position: absolute;
     background-color: rgb(255, 255, 0);
     background-image: radial-gradient(circle, rgb(46, 194, 0) 20%, rgb(255, 0, 0) 20%, rgb(255, 0, 0) 50%, rgb(0, 162, 255) 50%, rgb(0, 162, 255) 100%);
-    top: 240px;
-    left: 1264px;
+    top: 26.0%;
+    left: 66.4%;
 }
 
 .gSlide1 {
     position: absolute;
     background-color: rgb(0, 255, 0);
     background-image: linear-gradient(to right, rgb(255, 255, 0) 33%, rgb(0, 162, 255) 33%, rgb(0, 162, 255) 66%, rgb(255, 0, 0) 66%, rgb(255, 0, 0) 100%);
-    top: 293px;
-    left: 1386px;
+    top: 31.7%;
+    left: 72.8%;
 }
 
 .gSlide2 {
     position: absolute;
     background-color: rgb(0, 255, 0);
     background-image: linear-gradient(to right, rgb(255, 255, 0) 33%, rgb(0, 162, 255) 33%, rgb(0, 162, 255) 66%, rgb(255, 0, 0) 66%, rgb(255, 0, 0) 100%);
-    top: 714px;
-    left: 1386px;
+    top: 77.3%;
+    left: 72.8%;
 }
 
 .gEnd1 {
     position: absolute;
     background-color: rgb(0, 255, 0);
     background-image: radial-gradient(rgb(255, 0, 0) 20%, rgb(0, 162, 255) 20%, rgb(0, 162, 255) 50%, rgb(255, 255, 0) 50%, rgb(255, 255, 0) 100%);
-    top: 451px;
-    left: 1386px;
+    top: 48.9%;
+    left: 72.8%;
 }
 
 .gEnd2 {
     position: absolute;
     background-color: rgb(0, 255, 0);
     background-image: radial-gradient(rgb(255, 0, 0) 20%, rgb(0, 162, 255) 20%, rgb(0, 162, 255) 50%, rgb(255, 255, 0) 50%, rgb(255, 255, 0) 100%);
-    top: 924px;
-    left: 1386px;
+    top: 100.1%;
+    left: 72.8%;
 }
 
 .rSlide1 {
     position: absolute;
     background-color: rgb(255, 0, 0);
     background-image: linear-gradient(rgb(46, 194, 0) 33%, rgb(255, 255, 0) 33%, rgb(255, 255, 0) 66%, rgb(0, 162, 255) 66%, rgb(0, 162, 255) 100%);
-    top: 1030px;
-    left: 1325px;
+    top: 111.6%;
+    left: 69.6%;
 }
 
 .rSlide2 {
     position: absolute;
     background-color: rgb(255, 0, 0);
     background-image: linear-gradient(rgb(46, 194, 0) 33%, rgb(255, 255, 0) 33%, rgb(255, 255, 0) 66%, rgb(0, 162, 255) 66%, rgb(0, 162, 255) 100%);
-    top: 1030px;
-    left: 835px;
+    top: 111.6%;
+    left: 43.9%;
 }
 
 .rEnd1 {
     position: absolute;
     background-color: rgb(255, 0, 0);
     background-image: radial-gradient(rgb(0, 162, 255) 20%, rgb(255, 255, 0) 20%, rgb(255, 255, 0) 50%, rgb(46, 194, 0) 50%, rgb(46, 194, 0) 100%);
-    top: 1030px;
-    left: 1141px;
+    top: 111.6%;
+    left: 60.0%;
 }
 
 .rEnd2 {
     position: absolute;
     background-color: rgb(255, 0, 0);
     background-image: radial-gradient(rgb(0, 162, 255) 20%, rgb(255, 255, 0) 20%, rgb(255, 255, 0) 50%, rgb(46, 194, 0) 50%, rgb(46, 194, 0) 100%);
-    top: 1030px;
-    left: 590px;
+    top: 111.6%;
+    left: 31.0%;
 }
 
 .bSlide1 {
     position: absolute;
     background-color: rgb(0, 0, 255);
     background-image: linear-gradient(to right, rgb(255, 255, 0) 33%, rgb(46, 194, 0) 33%, rgb(46, 194, 0) 66%, rgb(255, 0, 0) 66%, rgb(255, 0, 0) 100%);
-    top: 977px;
-    left: 467px;
+    top: 105.8%;
+    left: 24.5%;
 }
 
 .bSlide2 {
     position: absolute;
     background-color: rgb(0, 0, 255);
     background-image: linear-gradient(to right, rgb(255, 255, 0) 33%, rgb(46, 194, 0) 33%, rgb(46, 194, 0) 66%, rgb(255, 0, 0) 66%, rgb(255, 0, 0) 100%);
-    top: 556px;
-    left: 467px;
+    top: 60.2%;
+    left: 24.5%;
 }
 
 .bEnd1 {
     position: absolute;
     background-color: rgb(0, 0, 255);
     background-image: radial-gradient(rgb(255, 255, 0) 20%, rgb(46, 194, 0) 20%, rgb(46, 194, 0) 50%, rgb(255, 0, 0) 50%, rgb(255, 0, 0) 100%);
-    top: 819px;
-    left: 467px;
+    top: 88.7%;
+    left: 24.5%;
 }
 
 .bEnd2 {
     position: absolute;
     background-color: rgb(0, 0, 255);
     background-image: radial-gradient(rgb(255, 255, 0) 20%, rgb(46, 194, 0) 20%, rgb(46, 194, 0) 50%, rgb(255, 0, 0) 50%, rgb(255, 0, 0) 100%);
-    top: 345px;
-    left: 467px;
+    top: 37.4%;
+    left: 24.5%;
 }
 
 .line {
-    height: 10px;
-    width: 200px;
+    height: 1.0%;
+    width: 10.5%;
     display: inline-block;
     background-color: rgb(0, 0, 0);
     border-style: solid;
@@ -402,54 +421,57 @@ img {
     border-color: rgb(255, 255, 255);
 }
 
+/*923 vertical*/
+/*1903 horizontal*/
+
 .yLine1 {
     position: absolute;
-    top: 258px;
-    left: 530px;
+    top: 27.9%;
+    left: 27.8%;
 }
 
 .yLine2 {
     position: absolute;
-    top: 258px;
-    left: 1065px;
+    top: 27.9%;
+    left: 55.9%;
 }
 
 .gLine1 {
     position: absolute;
-    top: 388px;
-    left: 1311px;
+    top: 42.0%;
+    left: 68.9%;
     rotate: 90deg;
 }
 
 .gLine2 {
     position: absolute;
-    top: 820px;
-    left: 1311px;
+    top: 88.9%;
+    left: 68.8%;
     rotate: 90deg;
 }
 
 .rLine1 {
     position: absolute;
-    top: 1047px;
-    left: 1170px;
+    top: 113.4%;
+    left: 61.5%;
 }
 
 .rLine2 {
     position: absolute;
-    top: 1047px;
-    left: 635px;
+    top: 113.4%;
+    left: 33.5%;
 }
 
 .bLine1 {
     position: absolute;
-    top: 915px;
-    left: 392px;
+    top: 99.1%;
+    left: 20.6%;
     rotate: 90deg;
 }
 
 .bLine2 {
     position: absolute;
-    top: 458px;
-    left: 392px;
+    top: 49.6%;
+    left: 20.6%;
     rotate: 90deg;
 }
