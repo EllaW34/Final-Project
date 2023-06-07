@@ -114,112 +114,112 @@ h3 {
     display: inline-block;
 }
 
-.y1 {
+#y1 {
     position: absolute;
     background-color: rgb(255, 255, 0);
-    top: 33.6%;
-    left: 37.3%;
+    top: 34%;
+    left: 37.5%;
 }
 
-.y2 {
+#y2 {
     position: absolute;
     background-color: rgb(255, 255, 0);
-    top: 33.6%;
-    left: 38.9%;
+    top: 34%;
+    left: 39%;
 }
 
-.y3 {
+#y3 {
     position: absolute;
     background-color: rgb(255, 255, 0);
-    top: 36.8%;
-    left: 37.3%;
+    top: 37%;
+    left: 37.5%;
 }
 
-.y4 {
+#y4 {
     position: absolute;
     background-color: rgb(255, 255, 0);
-    top: 36.8%;
-    left: 38.9%;
+    top: 37%;
+    left: 39%;
 }
 
-.g1 {
+#g1 {
     position: absolute;
     background-color: rgb(2, 158, 56);
     top: 48.2%;
     left: 68.0%;
 }
 
-.g2 {
+#g2 {
     position: absolute;
     background-color: rgb(2, 158, 56);
     top: 48.2%;
     left: 69.6%;
 }
 
-.g3 {
+#g3 {
     position: absolute;
     background-color: rgb(2, 158, 56);
     top: 51.4%;
     left: 68%;
 }
 
-.g4 {
+#g4 {
     position: absolute;
     background-color: rgb(2, 158, 56);
     top: 51.4%;
     left: 69.6%;
 }
 
-.b1 {
+#b1 {
     position: absolute;
     background-color: rgb(20, 176, 227);
     top: 88.3%;
     left: 28.9%;
 }
 
-.b2 {
+#b2 {
     position: absolute;
     background-color: rgb(20, 176, 227);
     top: 88.3%;
     left: 30.4%;
 }
 
-.b3 {
+#b3 {
     position: absolute;
     background-color: rgb(20, 176, 227);
     top: 91.5%;
     left: 28.9%;
 }
 
-.b4 {
+#b4 {
     position: absolute;
     background-color: rgb(20, 176, 227);
     top: 91.5%;
     left: 30.4%;
 }
 
-.r1 {
+#r1 {
     position: absolute;
     background-color: rgb(255, 0, 0);
     top: 102.4%;
     left: 59.8%;
 }
 
-.r2 {
+#r2 {
     position: absolute;
     background-color: rgb(255, 0, 0);
     top: 102.4%;
     left: 61.4%;
 }
 
-.r3 {
+#r3 {
     position: absolute;
     background-color: rgb(255, 0, 0);
     top: 105.6%;
     left: 59.8%;
 }
 
-.r4 {
+#r4 {
     position: absolute;
     background-color: rgb(255, 0, 0);
     top: 105.6%;

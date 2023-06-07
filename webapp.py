@@ -138,7 +138,7 @@ def moveYellow():
     print(theThing["piece"])
     moveY(theThing["piece"])
     
-    return session[theThing["piece"]]
+    return str(session[theThing["piece"]])
     
 def moveY(piece):
     print(session[piece])
@@ -189,7 +189,7 @@ def moveGreen():
     theThing = request.form
     print(theThing["piece"])
     moveG(theThing["piece"])
-    return session[theThing["piece"]]
+    return str(session[theThing["piece"]])
     
 def moveG(piece):
     print(session[piece])
@@ -233,7 +233,7 @@ def moveRed():
     theThing = request.form
     print(theThing["piece"])
     moveR(theThing["piece"])
-    return session[theThing["piece"]]
+    return str(session[theThing["piece"]])
     
 def moveR(piece):
     print(session[piece])
@@ -277,7 +277,7 @@ def moveBlue():
     theThing = request.form
     print(theThing["piece"])
     moveB(theThing["piece"])
-    return session[theThing["piece"]]
+    return str(session[theThing["piece"]])
     
 def moveB(piece):
     print(session[piece])
