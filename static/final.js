@@ -324,32 +324,32 @@ $(document).ready(function(){
                         
                         if(type == "green") {
                             if(number == 0){
-                                document.getElementById(id).style.top = "35.5%";
-                                document.getElementById(id).style.left = "38%";
+                                document.getElementById(id).style.top = "49.5%";
+                                document.getElementById(id).style.left = "69%";
                             }
                             if(number == 1){
-                                document.getElementById(id).style.top = "33%";
-                                document.getElementById(id).style.left = "31.58%";
+                                document.getElementById(id).style.top = "38.2%";
+                                document.getElementById(id).style.left = "70%";
                             }
                             if(number == 2){
-                                document.getElementById(id).style.top = "38.5%";
-                                document.getElementById(id).style.left = "31.58%";
+                                document.getElementById(id).style.top = "38.2%";
+                                document.getElementById(id).style.left = "67%";
                             }
                             if(number == 3){
-                                document.getElementById(id).style.top = "44%";
-                                document.getElementById(id).style.left = "31.58%";
+                                document.getElementById(id).style.top = "38.2%";
+                                document.getElementById(id).style.left = "64%";
                             }
                             if(number == 4){
-                                document.getElementById(id).style.top = "50%";
-                                document.getElementById(id).style.left = "31.58%";
+                                document.getElementById(id).style.top = "38.2%";
+                                document.getElementById(id).style.left = "60.5%";
                             }
                             if(number == 5){
-                                document.getElementById(id).style.top = "55.5%";
-                                document.getElementById(id).style.left = "31.58%";
+                                document.getElementById(id).style.top = "38.2%";
+                                document.getElementById(id).style.left = "57.5%";
                             }
                             if(number == 6){
-                                document.getElementById(id).style.top = "64%";
-                                document.getElementById(id).style.left = "31.58%";
+                                document.getElementById(id).style.top = "38.2%";
+                                document.getElementById(id).style.left = "53%";
                             }
                         }
                         else if(type == "white") {
@@ -611,32 +611,32 @@ $(document).ready(function(){
                         
                         if(type == "red") {
                             if(number == 0){
-                                document.getElementById(id).style.top = "35.5%";
-                                document.getElementById(id).style.left = "38%";
+                                document.getElementById(id).style.top = "104%";
+                                document.getElementById(id).style.left = "60.5%";
                             }
                             if(number == 1){
-                                document.getElementById(id).style.top = "33%";
-                                document.getElementById(id).style.left = "31.58%";
+                                document.getElementById(id).style.top = "106%";
+                                document.getElementById(id).style.left = "67%";
                             }
                             if(number == 2){
-                                document.getElementById(id).style.top = "38.5%";
+                                document.getElementById(id).style.top = "100%";
                                 document.getElementById(id).style.left = "31.58%";
                             }
                             if(number == 3){
-                                document.getElementById(id).style.top = "44%";
-                                document.getElementById(id).style.left = "31.58%";
+                                document.getElementById(id).style.top = "93%";
+                                document.getElementById(id).style.left = "67%";
                             }
                             if(number == 4){
-                                document.getElementById(id).style.top = "50%";
-                                document.getElementById(id).style.left = "31.58%";
+                                document.getElementById(id).style.top = "86.5%";
+                                document.getElementById(id).style.left = "67%";
                             }
                             if(number == 5){
-                                document.getElementById(id).style.top = "55.5%";
-                                document.getElementById(id).style.left = "31.58%";
+                                document.getElementById(id).style.top = "80%";
+                                document.getElementById(id).style.left = "67%";
                             }
                             if(number == 6){
-                                document.getElementById(id).style.top = "64%";
-                                document.getElementById(id).style.left = "31.58%";
+                                document.getElementById(id).style.top = "71%";
+                                document.getElementById(id).style.left = "67%";
                             }
                         }
                         else if(type == "white") {
@@ -898,32 +898,32 @@ $(document).ready(function(){
                         
                         if(type == "blue") {
                             if(number == 0){
-                                document.getElementById(id).style.top = "35.5%";
-                                document.getElementById(id).style.left = "38%";
+                                document.getElementById(id).style.top = "90%";
+                                document.getElementById(id).style.left = "30%";
                             }
                             if(number == 1){
-                                document.getElementById(id).style.top = "33%";
-                                document.getElementById(id).style.left = "31.58%";
+                                document.getElementById(id).style.top = "101%";
+                                document.getElementById(id).style.left = "28.5%";
                             }
                             if(number == 2){
-                                document.getElementById(id).style.top = "38.5%";
-                                document.getElementById(id).style.left = "31.58%";
+                                document.getElementById(id).style.top = "101%";
+                                document.getElementById(id).style.left = "31.7%";
                             }
                             if(number == 3){
-                                document.getElementById(id).style.top = "44%";
-                                document.getElementById(id).style.left = "31.58%";
+                                document.getElementById(id).style.top = "101%";
+                                document.getElementById(id).style.left = "35%";
                             }
                             if(number == 4){
-                                document.getElementById(id).style.top = "50%";
-                                document.getElementById(id).style.left = "31.58%";
+                                document.getElementById(id).style.top = "101%";
+                                document.getElementById(id).style.left = "38%";
                             }
                             if(number == 5){
-                                document.getElementById(id).style.top = "55.5%";
-                                document.getElementById(id).style.left = "31.58%";
+                                document.getElementById(id).style.top = "101%";
+                                document.getElementById(id).style.left = "41.2%";
                             }
                             if(number == 6){
-                                document.getElementById(id).style.top = "64%";
-                                document.getElementById(id).style.left = "31.58%";
+                                document.getElementById(id).style.top = "101%";
+                                document.getElementById(id).style.left = "46%";
                             }
                         }
                         else if(type == "white") {
